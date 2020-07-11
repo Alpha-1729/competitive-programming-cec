@@ -18,11 +18,11 @@ W=input().split()
 dic={}
 for i in range(N):
     for j in range(C[i],101,C[i]):
-        if j not in dic:
-            dic[j]=W[i]
+        if j in dic:
+                dic[j]=dic[j] + " " + W[i]
         else:
-            dic[j]=dic[j] + " " + W[i]
-
+                dic[j]=W[i]
+            
 # For horizontal printing.
 # print(', '.join([dic[i] if i in dic else str(i) for i in range(1,101)]))
 
