@@ -16,8 +16,9 @@ N=int(input())
 C=list(map(int,(input().split())))
 W=input().split()
 dic={}
+limit=100
 for i in range(N):
-    for j in range(C[i],101,C[i]):
+    for j in range(C[i],limit+1,C[i]):
         if j in dic:
                 dic[j]=dic[j] + " " + W[i]
         else:
@@ -29,6 +30,6 @@ for i in range(N):
 # OR
 
 # For vertical printing
-for i in range(1,101):
+for i in range(1,limit+1):
     dic.setdefault(i,str(i)) # If key not in dic, add new key and value.
     print(dic[i])
