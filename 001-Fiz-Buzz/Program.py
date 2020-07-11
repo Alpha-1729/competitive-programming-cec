@@ -25,7 +25,7 @@ for i in range(N):
                 dic[j]=W[i]
             
 # For horizontal printing.
-# print(', '.join([dic[i] if i in dic else str(i) for i in range(1,101)]))
+# print(', '.join([dic[i] if i in dic else str(i) for i in range(1,limit+1)]))
 
 # OR
 
