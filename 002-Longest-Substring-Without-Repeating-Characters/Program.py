@@ -18,8 +18,7 @@
 """
 def maxLength(data):
     store=set()
-    length=0
-    i=0
+    length=i=0
     for j in range(len(data)):
         if data[j] in store:
             store.remove(data[i])
