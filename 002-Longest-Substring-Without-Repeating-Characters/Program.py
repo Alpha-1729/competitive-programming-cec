@@ -18,13 +18,14 @@
 """
 def maxLength(data):
     store=set()
-    length=i=0
-    for j in range(len(data)):
+    length=i=j=0
+    while j<len(data):
         if data[j] in store:
             store.remove(data[i])
             i+=1
         else:
             store.add(data[j])
+            j+=1
             length=max(len(store),length)
     return length
     
