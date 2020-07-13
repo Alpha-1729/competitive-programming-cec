@@ -19,9 +19,11 @@
 def maxLength(data):
     store=set()
     length=0
+    i=0
     for j in range(len(data)):
         if data[j] in store:
-            store.remove(data[j])
+            store.remove(data[i])
+            i+=1
         else:
             store.add(data[j])
             length=max(len(store),length)
