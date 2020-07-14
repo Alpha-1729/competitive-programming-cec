@@ -1,0 +1,4 @@
+>>>>Input 2 numbers a,b:
+	print last 10 digit of a^b. 
+
+	
