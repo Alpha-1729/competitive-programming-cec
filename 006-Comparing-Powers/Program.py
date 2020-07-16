@@ -11,7 +11,7 @@
 """
 import math
 def takeLog(b,p):
-    return b * math.log(p)
+    return p * math.log(b)
 b1,p1,b2,p2=map(int,input().split())
 if ( takeLog(b1,p1) > takeLog(b2,p2)):print("{}^{} is greater".format(b1,p1))
 elif (takeLog(b1,p1) < takeLog(b2,p2)):print("{}^{} is greater".format(b2,p2))
